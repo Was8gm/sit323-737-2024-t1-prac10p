@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        app: node-app
+    spec:
+      containers:
+        - name: node-app
+          image: gcr.io/sit323-24t1-jiakun-li-74d448a/node-app:v1
+          ports:
+            - containerPort: 8080
