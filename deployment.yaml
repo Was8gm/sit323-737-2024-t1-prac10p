@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: gcr.io/sit323-24t1-jiakun-li-74d448a/node-app:v1
+          image: australia-southeast1-docker.pkg.dev/sit323-24t1-jiakun-li-74d448a/node-app/node-app:v1
           ports:
             - containerPort: 8080
